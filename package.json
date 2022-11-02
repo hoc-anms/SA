@@ -1,0 +1,12 @@
+{
+  "name": "SA",
+  "version": "1.0.0",
+  "description": "SA Project",
+  "main": "index.js",
+  "author": "hocpv",
+  "license": "MIT",
+  "devDependencies": {
+    "amqplib": "^0.10.3",
+    "dotenv": "^16.0.3"
+  }
+}

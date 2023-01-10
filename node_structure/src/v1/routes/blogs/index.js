@@ -4,7 +4,7 @@ const router = express.Router();
 router.get("/blogs", (req, res, next) => {
   res.status(200).json({
     status: "success",
-    message: "api ok",
+    message: "api test ok",
   });
 });
 

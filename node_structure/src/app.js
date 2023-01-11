@@ -4,8 +4,12 @@ const helmet = require('helmet')
 const morgan = require('morgan')
 const compression = require('compression')
 
+require('dotenv').config();
+
 //init dbs 
-// require('./v1/databases/init.mongodb')
+require('./v1/databases/init.mongodb')
+require('./v1/databases/init.multi.mongodb')
+
 // require('./v1/databases/init.redis')
 
 //user middleware

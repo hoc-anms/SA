@@ -1,5 +1,8 @@
 const mongoose = require('mongoose')
 
+// set strict mode to not show warning
+mongoose.set('strictQuery', true);
+
 //connect mongoose
 mongoose.connect( process.env.MONGO_URI).then( _ => console.log('Connected mongoose success!...'))
 .catch( err => console.error(`Error: connect:::`, err))
@@ -12,6 +15,5 @@ mongoose.set('debug', { color: false })
 
 // get mongodb-shell friendly output (ISODate)
 mongoose.set('debug', { shell: true })
-
 
 module.exports = mongoose;

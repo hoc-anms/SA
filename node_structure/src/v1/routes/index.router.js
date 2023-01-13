@@ -12,5 +12,7 @@ router.get("/checkstatus", (req, res, next) => {
 });
 
 router.use('/v1', require('./blogs'))
+router.use('/v1', require('./users'))
+
 
 module.exports = router;

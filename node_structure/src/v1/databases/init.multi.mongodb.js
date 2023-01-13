@@ -10,7 +10,7 @@ const newConnection = (uri) => {
 
     db.on('connected', function(){
         mongoose.set('debug', (col, method, query, doc) => {
-            console.log(`MongoDB Debug :: ${this.conn.name}:${col}.${method}(${JSON.stringify(query)},${JSON.stringify(doc)})`)
+            console.log(`MongoDB Debug :: ${this.name}:${col}.${method}(${JSON.stringify(query)},${JSON.stringify(doc)})`)
         })
 
         console.log(`MongoDB connected :: ${this.name}`)

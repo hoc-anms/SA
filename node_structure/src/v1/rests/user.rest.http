@@ -1,7 +1,7 @@
 @urlDev=http://localhost:3000
 
 ### login
-## SQL Injection
+## Use Case: SQL Injection
 POST {{urlDev}}/v1/user/login
 Content-Type: application/json
 
